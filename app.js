@@ -54,7 +54,7 @@ app.use(
     // 需要排除的 token 验证的路由
     path: [
       { url: "/api/admin/login", methods: ["POST"] },
-      { url: "/back-res/captcha", methods: ["GET"] },
+      { url: "/res/captcha", methods: ["GET"] },
       { url: "/api/banner", methods: ["GET"] },
       { url: "/api/blogtype", methods: ["GET"] },
       { url: "/api/blog", methods: ["GET"] },
@@ -79,7 +79,7 @@ app.use("/api/message", messageRouter);
 app.use("/api/comment", messageRouter);
 app.use("/api/about", aboutRouter);
 app.use("/api/setting", settingRouter);
-app.use("/back-res/captcha", captchaRouter);
+app.use("/res/captcha", captchaRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

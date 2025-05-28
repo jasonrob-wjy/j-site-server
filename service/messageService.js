@@ -41,7 +41,7 @@ module.exports.addMessageService = async function (newMessage) {
     },
     blogId: {
       presence: {
-        allowEmpty: false,
+        allowEmpty: true,
       },
       type: "string",
     },

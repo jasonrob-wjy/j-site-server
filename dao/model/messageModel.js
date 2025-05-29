@@ -24,7 +24,7 @@ module.exports = sequelize.define(
     },
     blogId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
